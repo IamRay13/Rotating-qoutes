@@ -1,20 +1,52 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Photo Sharing App</title>
+    <title>Instagram Clone</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <header>
-        <h1>My Photo Gallery</h1>
+        <div class="logo">Instagram Clone</div>
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Explore</a></li>
+                <li><a href="#">Notifications</a></li>
+                <li><a href="#">Profile</a></li>
+            </ul>
+        </nav>
     </header>
     <main>
-        <input type="file" id="fileInput" multiple>
-        <button id="uploadBtn">Upload Photos</button>
-        <div id="gallery"></div>
+        <section class="posts">
+            <article class="post">
+                <header>
+                    <img src="profile1.jpg" alt="Profile Picture">
+                    <div>
+                        <h2>Username</h2>
+                        <p>Location</p>
+                    </div>
+                </header>
+                <img src="post1.jpg" alt="Post Image">
+                <footer>
+                    <button>Like</button>
+                    <button>Comment</button>
+                    <button>Share</button>
+                </footer>
+            </article>
+            <!-- Add more posts here -->
+        </section>
+        <section class="sidebar">
+            <h2>Stories</h2>
+            <ul>
+                <li>
+                    <img src="story1.jpg" alt="Story Image">
+                    <p>Username</p>
+                </li>
+                <!-- Add more stories here -->
+            </ul>
+        </section>
     </main>
     <script src="script.js"></script>
 </body>
