@@ -4,44 +4,18 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Quote Display</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            height: 100vh;
-            background-color: #f4f4f4;
-        }
-        .quote {
-            font-size: 24px;
-            text-align: center;
-            padding: 20px;
-            border: 1px solid #ccc;
-            border-radius: 10px;
-            background-color: #fff;
-        }
-    </style>
+    <title>Photo Sharing App</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <div class="quote" id="quoteDisplay">Loading quote...</div>
-    <script>
-        const quotes = [
-            "The only limit to our realization of tomorrow is our doubts of today.",
-            "Life is 10% what happens to us and 90% how we react to it.",
-            "The purpose of our lives is to be happy.",
-            "Get busy living or get busy dying.",
-            "You have within you right now, everything you need to deal with whatever the world can throw at you."
-        ];
-
-        function changeQuote() {
-            const randomIndex = Math.floor(Math.random() * quotes.length);
-            document.getElementById('quoteDisplay').innerText = quotes[randomIndex];
-        }
-
-        changeQuote();
-        setInterval(changeQuote, 60000);
-    </script>
+    <header>
+        <h1>My Photo Gallery</h1>
+    </header>
+    <main>
+        <input type="file" id="fileInput" multiple>
+        <button id="uploadBtn">Upload Photos</button>
+        <div id="gallery"></div>
+    </main>
+    <script src="script.js"></script>
 </body>
 </html>
